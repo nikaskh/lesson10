@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.box{
+    border: 5px solid black;
+    /* width: 200px;
+    height: 200px; */
+    background-color: blue;
+    border-color: blue;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+    grid-template-areas: 
+    "section aside aside"
+    "section aside aside"
+    "footer footer footer";
+    margin-top: 100px;
+}
+.box:nth-child(1){
+    grid-area: section;
+    color: white;
+}
+.box:nth-child(2){
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:nth-child(3){
+    grid-area: footer;
+}
+.section-photo{
+    background-color: white;
+    border-radius: 28px;
+    border: 5px white solid;
+}
+iframe{
+    border-radius: 28px;
+    margin-top: 50px;
+}
+.first-article-div {
+    margin-top: 30px;
+}
+.section-div{
+    width: 300px;
+    margin-left: 100px;
+}
+.first-article-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-article-div a{
+    color: white;
+}
+.form-row{
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.form,
+.form-row{
+    display:flex;
+    flex-direction: column;
+}
+textarea{
+    background: blue;
+}
+input{
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+}
+label{
+    font-size: 16px;
+    color: white;
+}
+button{
+    margin-top: 20px;
+    margin-left: 160px;
+    background: white;
+    border-radius: 20px;
+    border: 10px solid white;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background: black;
+    color: white;
+    border-color: black;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.footer-ul li,
+.footer-ul{
+    display: flex;
+    margin-right: 20px;
+}
+.footer-logo1{
+    width: 26px;
+}
+.footer-logo2{
+    width: 121px;
+}
